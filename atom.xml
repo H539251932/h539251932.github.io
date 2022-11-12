@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://h539251932.github.io</id>
+    <title>Moinkhao&apos;s Blog</title>
+    <updated>2022-11-12T11:10:41.903Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://h539251932.github.io"/>
+    <link rel="self" href="https://h539251932.github.io/atom.xml"/>
+    <subtitle>Change is coming！
+&lt;center&gt;
+&lt;script&gt;
+var caution = false
+        function setCookie(name, value, expires, path, domain, secure) {
+            var curCookie = name + &quot;=&quot; + escape(value) + ((expires) ? &quot;; expires=&quot; + expires.toGMTString() : &quot;&quot;) + ((path) ? &quot;; path=&quot; + path : &quot;&quot;) + ((domain) ? &quot;; domain=&quot; + domain : &quot;&quot;) + ((secure) ? &quot;; secure&quot; : &quot;&quot;)
+            if (!caution || (name + &quot;=&quot; + escape(value)).length &lt;= 4000)
+                document.cookie = curCookie
+            else if (confirm(&quot;Cookie exceeds 4KB and will be cut!&quot;))
+                document.cookie = curCookie
+        }
+        function getCookie(name) {
+            var prefix = name + &quot;=&quot;
+            var cookieStartIndex = document.cookie.indexOf(prefix)
+            if (cookieStartIndex == -1)
+                return null
+            var cookieEndIndex = document.cookie.indexOf(&quot;;&quot;, cookieStartIndex + prefix.length)
+            if (cookieEndIndex == -1)
+                cookieEndIndex = document.cookie.length
+            return unescape(document.cookie.substring(cookieStartIndex + prefix.length,
+                cookieEndIndex))
+        }
+        function deleteCookie(name, path, domain) {
+            if (getCookie(name)) {
+                document.cookie = name + &quot;=&quot; + ((path) ? &quot;; path=&quot; + path : &quot;&quot;) + ((domain) ? &quot;; domain=&quot; + domain : &quot;&quot;) + &quot;; expires=Thu, 01-Jan-70 00:00:01 GMT&quot;
+            }
+        }
+        function fixDate(date) {
+            var base = new Date(0)
+            var skew = base.getTime()
+            if (skew &gt; 0)
+                date.setTime(date.getTime() - skew)
+        }
+        var now = new Date()
+        fixDate(now)
+        now.setTime(now.getTime() + 730 * 24 * 60 * 60 * 1000)
+        var visits = getCookie(&quot;counter&quot;)
+        if (!visits)
+            visits = 1
+        else
+            visits = parseInt(visits) + 1
+        setCookie(&quot;counter&quot;, visits, now)
+        document.write(&quot;&lt;font size=2color=black&gt;欢迎您，您是第&quot; + visits + &quot; 个访问该站点的访客&quot;)
+    &lt;/script&gt;  &lt;/center&gt;
+   
+
+
+&lt;input id=&quot;sysDate&quot; style=&quot;width: 210px;text-align: center;margin:auto;  background-color:transparent;outline-style: none ;border: 0px;color:white;opacity:0.95;&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+		setInterval(
+				&quot;document.getElementById(&apos;sysDate&apos;).value=new Date().toLocaleString()+&apos;  星期&apos;+&apos;日一二三四五六&apos;.charAt(new Date().getDay());&quot;,
+				1000);
+		setInterval(
+				&quot;document.getElementById(&apos;sysSysDate&apos;).value=new Date().toLocaleString();&quot;,
+				1000);
+&lt;/script&gt;
+
+
+ 
+    
+</subtitle>
+    <logo>https://h539251932.github.io/images/avatar.png</logo>
+    <icon>https://h539251932.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2022, Moinkhao&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Java学习经历-1]]></title>
+        <id>https://h539251932.github.io/post/java-xue-xi-1/</id>
+        <link href="https://h539251932.github.io/post/java-xue-xi-1/">
+        </link>
+        <updated>2022-09-15T01:56:35.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="java入门">java入门</h1>
+<blockquote>
+<p>大二上学期开始学习java，虽然一直听说java是一门很厉害的语言，但没有系统去的学习😃😃<br>
+就我目前刚学的实践来看，Java的语法很像c语言和javascript二者的结合，经过这样思考后学习java就没那么积极了，感觉很多东西都学过，一切都那么似曾相识。<br>
+但我知道这样是不对的，后面我会积极改正这种错误思想☹️☹️☹️</p>
+</blockquote>
+<h3 id="java学习路线">java学习路线</h3>
+<blockquote>
+<p><a href="https://luxian.yupi.icu/#/">https://luxian.yupi.icu/#/</a></p>
+</blockquote>
+<h3 id="安装jdk">安装jdk</h3>
+<blockquote>
+<p>java的运行离不开jdk编译，同时也需要配置环境，环境配置搜教程即可</p>
+</blockquote>
+<h3 id="eclipse的使用">eclipse的使用</h3>
+<blockquote>
+<p>官网下载eclipse免费，安装简易就不再多说了</p>
+</blockquote>
+<h3 id="hello-world的运行">hello world的运行</h3>
+<blockquote>
+<p>众所周知，所有编译语言的学习都是从hello world开始的，java当然也不例外</p>
+</blockquote>
+<pre><code class="language-java">public class do01{
+    public static void main(String[] args) {
+        System.out.println(&quot;帅哥美女你们好啊&quot;);
+    }
+}
+</code></pre>
+<h3 id="标识符与关键字">标识符与关键字</h3>
+<h3 id="数据类型">数据类型</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">字节</th>
+<th style="text-align:center">范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">byte</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">short</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">long</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="数据类型转化">数据类型转化</h3>
+<figure data-type="image" tabindex="1"><img src="https://www.helloimg.com/images/2022/09/28/ZKs0WC.png" alt="" loading="lazy"></figure>
+<blockquote>
+<p>此处会将小范围转化为大范围，char可转int(在java中可实现，c语言不行)</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[语录合集]]></title>
+        <id>https://h539251932.github.io/post/yu-lu-he-ji/</id>
+        <link href="https://h539251932.github.io/post/yu-lu-he-ji/">
+        </link>
+        <updated>2022-09-13T11:06:08.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<!-- more -->
+<p><img src="https://h539251932.github.io/post-images/1663469086709.jpg" alt="" loading="lazy">&gt; 只是有感而发罢了，无其他意思</p>
+<h2 id="1伤感emo文学">1.伤感emo文学</h2>
+<ul>
+<li>明知没结果却迟迟不愿放手，可最后还是败给了现实！</li>
+<li>原来装睡的人是真的叫不醒！</li>
+<li>及时止损是理性，一言不合是常态！</li>
+<li>在你心中有地位终究是我在自作多情！</li>
+<li>迎着光照的方向将你遗忘！</li>
+</ul>
+<h2 id="2人生哲理文学">2.人生哲理文学</h2>
+<ul>
+<li>世界上没有二片完全相同的树叶，但会有属于同一类的二片树叶！</li>
+<li>原来顺其自然是真的豁达与看淡！</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[程序员学习cook的平台]]></title>
+        <id>https://h539251932.github.io/post/cheng-xu-yuan-xue-xi-cook-de-ping-tai/</id>
+        <link href="https://h539251932.github.io/post/cheng-xu-yuan-xue-xi-cook-de-ping-tai/">
+        </link>
+        <updated>2022-09-13T11:04:27.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<h2 id="1选材做饭手册">1.选材做饭手册</h2>
+<p>网站地址：<a href="https://cook.yunyoujun.cn/">https://cook.yunyoujun.cn/</a><br>
+作者项目地址：<a href="https://github.com/YunYouJun/cook">https://github.com/YunYouJun/cook</a><br>
+<img src="https://www.helloimg.com/images/2022/09/12/ZI43qP.png" alt="看图" loading="lazy"></p>
+<blockquote>
+<p>使用方法：先选材料菜、肉和厨具等，系统自动推荐搭配菜品，在b站观看详细教程<br>
+<br></p>
+</blockquote>
+<h2 id="2程序员做饭指南">2.程序员做饭指南</h2>
+<p>网站地址：<a href="https://cook.aiurs.co/">https://cook.aiurs.co/</a><br>
+作者项目地址：<a href="https://github.com/Anduin2017/HowToCook">https://github.com/Anduin2017/HowToCook</a><br>
+<img src="https://www.helloimg.com/images/2022/09/12/ZI4eUn.png" alt="image" loading="lazy"><br>
+<img src="https://www.helloimg.com/images/2022/09/12/ZI4tt0.png" alt="image" loading="lazy"><br>
+<img src="https://www.helloimg.com/images/2022/09/12/ZI4xPR.png" alt="image" loading="lazy"></p>
+<blockquote>
+<p>使用方法：可以按分类找到自己想做的菜，进去可以看见详细的步骤，连份量都计算得精准到k，而且这个项目开发添加，自己有菜品也可以添加进去噢，非常推荐！</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Moinkhao's sites]]></title>
+        <id>https://h539251932.github.io/post/moinkhaos-sites/</id>
+        <link href="https://h539251932.github.io/post/moinkhaos-sites/">
+        </link>
+        <updated>2022-09-13T09:30:02.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>是不是顺其自然便好——moinkhao<br>
+如果有问题欢迎通过mail或github等方式联系我 <br></p>
+</blockquote>
+<h2 id="网站集合体">网站集合体</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">项目名</th>
+<th style="text-align:center">点击跳转</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">墨陌导航</td>
+<td style="text-align:center"><a href="https://h539251932.github.io/daohang">稀奇古怪的导航</a></td>
+</tr>
+<tr>
+<td style="text-align:center">引导页</td>
+<td style="text-align:center"><a href="https://moinkhao.rth1.one">个人引导页</a></td>
+</tr>
+<tr>
+<td style="text-align:center">网盘空间</td>
+<td style="text-align:center"><a href="http://h539251932.ys168.com">云储存空间</a></td>
+</tr>
+<tr>
+<td style="text-align:center">圈小猫</td>
+<td style="text-align:center"><a href="https://xiaojiarun.github.io/mao.html">圈猫的pcweb游戏</a></td>
+</tr>
+<tr>
+<td style="text-align:center">冰墩墩</td>
+<td style="text-align:center"><a href="https://h539251932.github.io/mohao/bdd">2D的冰墩墩</a></td>
+</tr>
+<tr>
+<td style="text-align:center">雪容融</td>
+<td style="text-align:center"><a href="https://h539251932.github.io/mohao/xrr">2D的雪容融</a></td>
+</tr>
+<tr>
+<td style="text-align:center">霓虹灯爱心</td>
+<td style="text-align:center"><a href="https://h539251932.github.io/mohao/lovea">送给对象的流动爱心</a></td>
+</tr>
+<tr>
+<td style="text-align:center">飞机大战</td>
+<td style="text-align:center"><a href="https://moinkhao.rth1.one/fly">pc端的闲时游戏项目</a></td>
+</tr>
+<tr>
+<td style="text-align:center">QQ个人页</td>
+<td style="text-align:center"><a href="https://moinkhao.rth1.one/space/index">来添加我的qq吧</a></td>
+</tr>
+<tr>
+<td style="text-align:center">响应式ppt</td>
+<td style="text-align:center"><a href="https://moinkhao.github.io/asppt/">滚动幻灯片</a></td>
+</tr>
+<tr>
+<td style="text-align:center">搜索页</td>
+<td style="text-align:center"><a href="https://moinkhao.github.io/Nav/">简洁搜索框</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="介绍一下我搭建的小程序">介绍一下我搭建的小程序</h2>
+<blockquote>
+<p>本人搭建了一个微信游戏小程序，暂时不对外开放,体验链接复制到微信打开：<a href="https://open.weixin.qq.com/sns/getexpappinfo?appid=wxed8a95707bafe5f1&amp;path=#wechat-redirect">人生重开模拟器</a>)</p>
+</blockquote>
+<figure data-type="image" tabindex="1"><a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=h539251932@qq.com"><img src="https://s1.328888.xyz/2022/09/09/9CkOU.png" alt="mail" title="点下试试" loading="lazy"></a></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于]]></title>
+        <id>https://h539251932.github.io/post/about/</id>
+        <link href="https://h539251932.github.io/post/about/">
+        </link>
+        <updated>2019-01-25T11:09:48.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>欢迎来到土豆沙锅锅的小站呀，很高兴遇见你！🤝</p>
+</blockquote>
+<h2 id="关于本站">🏠 关于本站</h2>
+<p>业余时间写感悟，心得的空间，目前支持以下业务</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">名称不分先后</th>
+<th style="text-align:center">点击了解详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">moinkhao</td>
+<td style="text-align:center"><a href="https://h539251932.github.io/moinkhao">个人空间</a></td>
+</tr>
+<tr>
+<td style="text-align:center">支持业务</td>
+<td style="text-align:center">了解详情</td>
+</tr>
+<tr>
+<td style="text-align:center">海外账号注册</td>
+<td style="text-align:center">google.twitter.ins等</td>
+</tr>
+<tr>
+<td style="text-align:center">全网资源下载</td>
+<td style="text-align:center">音乐、影视、小说等</td>
+</tr>
+<tr>
+<td style="text-align:center">搭建个人主页</td>
+<td style="text-align:center">提供个人主页教程和源码</td>
+</tr>
+<tr>
+<td style="text-align:center">网络信息咨询</td>
+<td style="text-align:center">推荐一些便捷实用的平台</td>
+</tr>
+<tr>
+<td style="text-align:center">如有需要</td>
+<td style="text-align:center">底部邮箱联系</td>
+</tr>
+</tbody>
+</table>
+<h2 id="博主是谁">👨‍💻 博主是谁</h2>
+<p>土豆沙锅锅不过只一个真诚深情但又平平无奇的小笨蛋罢了</p>
+<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
+<p>不抽烟不喝酒不赌博就是喜欢康康美女(孤寡)怎么了</p>
+<h2 id="联系我呀">📬 联系我呀</h2>
+<p><a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=h539251932@qq.com">你戳戳这就可以和我千里传音了</a></p>
+]]></content>
+    </entry>
+</feed>
